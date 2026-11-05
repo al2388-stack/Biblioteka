@@ -36,6 +36,6 @@
 }
 
 // Paskaidrojums:
-// 1. IsBorrowed ir ar private set, lai ievērotu enkapsulācijas principu - ārpus klases neviens nevar patvaļīgi izmainīt grāmatas stāvokli (piem., padarīt to par izsniegtu bez aizņemšanās loģikas), to var kontrolēt tikai caur metodēm Borrow() un Return().
-// 2. Book un BookPrinter ir atsevišķas klases, lai ievērotu SOLID S (Single Responsibility / Vienas atbildības) principu. 
-//    Klasei Book jāatbild tikai par grāmatas datiem un stāvokli, bet izvade (konsole, UI u.c.) ir cita atbildība, ko veic BookPrinter.
+// 1. IsBorrowed ir ar private set, lai ievērotu principu - ārpus klases neviens nevar vienkārši izmainīt grāmatas stāvokli (piem., padarīt to par izsniegtu bez aizņemšanās loģikas), to var kontrolēt tikai caur metodēm Borrow() un Return().
+// 2. Book un BookPrinter ir atsevišķas klases, lai ievērotu SOLID S Single Responsibility / Vienas atbildības principu. 
+//    Klasei Book jāatbild tikai par grāmatas datiem un stāvokli, bet izvade (konsole, u.c.) ir cita atbildība, ko veic BookPrinter.
